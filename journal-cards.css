@@ -1,0 +1,161 @@
+/* Journal landing page: header section + five category cards.
+   Load after travel.css, or paste at the end of it. */
+
+.journal-hero {
+  background: var(--forest);
+  color: white;
+  padding: 190px 0 90px;
+}
+
+.journal-hero h1 {
+  margin: 22px 0;
+  font-size: clamp(48px, 7vw, 92px);
+  letter-spacing: -3px;
+}
+
+.journal-hero p {
+  max-width: 520px;
+  margin: 0;
+  color: #dce7d9;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Darker green so the accent word stays readable on the cream background */
+.journal-browse h2 em,
+.journal-browse .section-heading .eyebrow {
+  color: #4c633f;
+}
+
+/* Cards are links, not articles */
+a.card {
+  display: block;
+}
+
+.card-content p {
+  margin: 0 0 16px;
+  color: #dce7d9;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.card-meta b {
+  font-weight: 400;
+}
+
+/* 5 cards: three on the top row, two wider ones below */
+.journal-cards {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.journal-cards .card {
+  grid-column: span 2;
+}
+
+.journal-cards .card:nth-child(n + 4) {
+  grid-column: span 3;
+}
+
+@media (max-width: 900px) {
+  .journal-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journal-cards .card,
+  .journal-cards .card:nth-child(n + 4) {
+    grid-column: span 1;
+  }
+
+  .journal-cards .card:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .journal-hero {
+    padding: 150px 0 60px;
+  }
+
+  .journal-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-cards .card,
+  .journal-cards .card:last-child {
+    grid-column: span 1;
+  }
+}
+
+/* Header dropdown: Edinburgh Guide submenu */
+.nav-dropdown-menu .has-submenu {
+  position: relative;
+}
+
+.submenu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submenu-row a {
+  flex: 1;
+}
+
+.submenu-toggle {
+  padding: 8px 16px;
+  border: 0;
+  background: transparent;
+  color: #25352f;
+  font-size: 12px;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: -11px;
+  left: 100%;
+  display: none;
+  min-width: 210px;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #dce3db;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.has-submenu:hover > .nav-submenu,
+.has-submenu:focus-within > .nav-submenu,
+.has-submenu.is-open > .nav-submenu {
+  display: block;
+}
+
+.nav-submenu a {
+  display: block;
+  padding: 11px 18px;
+  color: #25352f;
+  white-space: nowrap;
+}
+
+.nav-submenu a:hover,
+.nav-submenu a:focus-visible {
+  background: #f1f4ee;
+  color: var(--forest);
+}
+
+/* Four cards in a 2 x 2 grid (Edinburgh guide) */
+.journal-cards.two-by-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.journal-cards.two-by-two .card,
+.journal-cards.two-by-two .card:nth-child(n + 4),
+.journal-cards.two-by-two .card:last-child {
+  grid-column: span 1;
+}
+
+@media (max-width: 600px) {
+  .journal-cards.two-by-two {
+    grid-template-columns: 1fr;
+  }
+}

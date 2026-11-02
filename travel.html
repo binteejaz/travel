@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elsewhere — Cinematic Travel Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">else<span>where</span></a>
+
+            <div class="nav-links">
+                <a href="travel.html">Home</a>
+
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button" aria-expanded="false"
+                        aria-controls="destinations-menu">
+                        Destinations
+                        <span aria-hidden="true">▾</span>
+                    </button>
+
+                    <ul class="nav-dropdown-menu" id="destinations-menu">
+                        <li><a href="edinburgh-guide.html">City and Destination Guide</a></li>
+                        <li><a href="libraries-journal.html">Culture and Libraries</a></li>
+                        <li><a href="seasonal-travel.html">Seasonal Travel</a></li>
+                        <li><a href="solo-travel.html">Solo Travel</a></li>
+                    </ul>
+                </div>
+
+                <a href="philosophy.html">Our philosophy</a>
+                <a href="journel.html">Journal</a>
+
+            </div>
+
+            <button class="menu-btn" aria-label="Open menu">☰</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-image"></div>
+
+            <div class="hero-content container">
+                <div class="eyebrow">Travel beyond the ordinary</div>
+
+                <h1>
+                    Find your<br>
+                    <em>elsewhere.</em>
+                </h1>
+
+                <p>
+                    Curated journeys for curious souls. Discover places that stay with
+                    you long after you return home.
+                </p>
+
+                <a class="button" href="#destinations">
+                    Explore destinations →
+                </a>
+            </div>
+
+        </section>
+
+        <section class="section container journal-browse" id="destinations">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">The collection</div>
+                    <h2>Places worth<br><em>going slowly.</em></h2>
+                </div>
+
+                <span class="results">5 categories</span>
+            </div>
+
+            <div class="cards journal-cards">
+                <a class="card" href="edinburgh-guide.html">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
+                        alt="Mountain landscape at sunrise" loading="lazy">
+                    <span class="tag">Guides</span>
+
+                    <div class="card-content">
+                        <div class="eyebrow">Plan your trip</div>
+                        <h3>City and Destination Guides</h3>
+                        <p>Where to go, what to see, and how to pace it.</p>
+                        <div class="card-meta">
+                            <span>Browse guides</span>
+                            <b>↗ Read</b>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="card" href="seasonal-travel.html">
+                    <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1000&q=80"
+                        alt="Mountains in changing light" loading="lazy">
+                    <span class="tag">Seasons</span>
+
+                    <div class="card-content">
+                        <div class="eyebrow">When to go</div>
+                        <h3>Seasonal Travel</h3>
+                        <p>The right place for the right month of the year.</p>
+                        <div class="card-meta">
+                            <span>Browse seasons</span>
+                            <b>↗ Read</b>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="card" href="solo-travel.html">
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=80"
+                        alt="Traveler looking at mountains" loading="lazy">
+                    <span class="tag">Solo</span>
+
+                    <div class="card-content">
+                        <div class="eyebrow">On your own</div>
+                        <h3>Solo Travel</h3>
+                        <p>Practical ideas for traveling alone with confidence.</p>
+                        <div class="card-meta">
+                            <span>Browse solo guides</span>
+                            <b>↗ Read</b>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="card" href="libraries-journal.html">
+                    <!-- Replace with your own library photo -->
+                    <img src="images/foundry-library-869061_1920.jpg" alt="A grand library interior in Edinburgh"
+                        loading="lazy">
+                    <span class="tag">Culture</span>
+
+                    <div class="card-content">
+                        <div class="eyebrow">Books and buildings</div>
+                        <h3>Culture and Libraries</h3>
+                        <p>Quiet rooms, old shelves, and the stories inside them.</p>
+                        <div class="card-meta">
+                            <span>Start with Edinburgh</span>
+                            <b>↗ Read</b>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="card" href="slow-travel-tips.html">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                        alt="Quiet beach at the edge of the sea" loading="lazy">
+                    <span class="tag">Tips</span>
+
+                    <div class="card-content">
+                        <div class="eyebrow">Travel better</div>
+                        <h3>Slow Travel Tips</h3>
+                        <p>Fewer stops, more time, and room to wander.</p>
+                        <div class="card-meta">
+                            <span>Browse tips</span>
+                            <b>↗ Read</b>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="section container story" id="story">
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80"
+                    alt="Mountain valley">
+            </div>
+
+            <div class="story-copy">
+                <div class="eyebrow" style="color: black;">Why elsewhere</div>
+                <h2>Travel is not<br><em>a checklist.</em></h2>
+
+                <p>
+                    We believe the best trips are not measured in destinations visited,
+                    but in moments remembered. Elsewhere is a collection of thoughtful
+                    guides for travelers who prefer depth over speed.
+                </p>
+
+                <a href="#journal" class="button">Read our journal →</a>
+            </div>
+        </section>
+    </main>
+    <section class="banner" id="journal">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=80"
+            alt="Traveler looking at mountains">
+
+        <div class="banner-content">
+            <div class="eyebrow">The elsewhere journal</div>
+            <h2>Stories from<br><em>the road.</em></h2>
+            <p>
+                Notes, photographs, and ideas for your next great escape.
+            </p>
+            <a class="button" href="edinburgh-journal.html">
+                Read the journal →
+            </a>
+        </div>
+    </section>
+    <footer id="site-footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <div class="logo">else<span>where</span></div>
+                <p>Travel beyond the ordinary.</p>
+
+                <a class="footer-email" href="mailto:hello@elsewhere.travel">
+                    ✉ hello@elsewhere.travel
+                </a>
+            </div>
+
+            <div class="footer-column" style="list-style: none;">
+                <h3>Explore</h3>
+                        <li><a href="edinburgh-guide.html">City and Destination Guide</a></li>
+                        <li><a href="libraries-journal.html">Culture and Libraries</a></li>
+                        <li><a href="seasonal-travel.html">Seasonal Travel</a></li>
+                        <li><a href="solo-travel.html">Solo Travel</a></li>
+            </div>
+
+            <div class="footer-column">
+                <h3>Information</h3>
+                <a href="travel.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="policy.html">Privacy Policy</a>
+                <a href="term.html">Terms and Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Mail Us</h3>
+                <p>Have a question or suggestion?</p>
+                <a class="mail-button" href="mailto:hello@elsewhere.travel">
+                    Mail Us →
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Elsewhere Travel Guide. All rights reserved.</span>
+            <span>Made for curious travelers.</span>
+        </div>
+    </footer>
+    <script src="travel.js"></script>
+
+</body>
+
+</html>
