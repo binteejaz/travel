@@ -10,21 +10,39 @@
     <link
         href="https://fonts.googleapis.com/css3?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="journal-cards.css">
 
 </head>
 
 <body>
     <header>
         <nav class="container">
-            <a href="#" class="logo">else<span>where</span></a>
+            <a href="index.html" class="logo">else<span>where</span></a>
 
             <div class="nav-links">
-                 <a href="travel.html">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#story">Our philosophy</a>
-                <a href="#journal">Journal</a>
+                <a href="index.html">Home</a>
+
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button" aria-expanded="false"
+                        aria-controls="destinations-menu">
+                        Destinations
+                        <span aria-hidden="true">▾</span>
+                    </button>
+
+                    <ul class="nav-dropdown-menu" id="destinations-menu">
+                        <li><a href="edinburgh-guide.html">City and Destination Guide</a></li>
+                        <li><a href="libraries-journal.html">Culture and Libraries</a></li>
+                        <li><a href="seasonal-travel.html">Seasonal Travel</a></li>
+                        <li><a href="solo-travel.html">Solo Travel</a></li>
+                    </ul>
+                </div>
+
+                <a href="philosophy.html">Our philosophy</a>
+                <a href="journel.html">Journal</a>
+
             </div>
+
 
             <button class="menu-btn" aria-label="Open menu">☰</button>
         </nav>
@@ -148,19 +166,21 @@
                 </a>
             </div>
 
-            <div class="footer-column">
+            <div class="footer-column" style="list-style: none;">
                 <h3>Explore</h3>
-                <a href="#destinations">Destinations</a>
-                <a href="#story">About Us</a>
-                <a href="#journal">Journal</a>
+                <li><a href="edinburgh-guide.html">City and Destination Guide</a></li>
+                <li><a href="libraries-journal.html">Culture and Libraries</a></li>
+                <li><a href="seasonal-travel.html">Seasonal Travel</a></li>
+                <li><a href="solo-travel.html">Solo Travel</a></li>
             </div>
 
             <div class="footer-column">
                 <h3>Information</h3>
-                <a href="#about-us">About Us</a>
-                <a href="#privacy-policy">Privacy Policy</a>
-                <a href="#terms">Terms and Conditions</a>
-                <a href="#disclaimer">Disclaimer</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="policy.html">Privacy Policy</a>
+                <a href="term.html">Terms and Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
             </div>
 
             <div class="footer-column">
@@ -178,7 +198,7 @@
             <span>Made for curious travelers.</span>
         </div>
     </footer>
-    <script src="travel.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
