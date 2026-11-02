@@ -1,0 +1,24 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "A static travel website built with HTML, CSS and JavaScript. \r It helps readers plan a trip to Edinburgh with practical guides to the best places to visit and where to eat, along with tips for slow travel, solo travel and travelling in different seasons.\r It also includes travel journals, an about page, and the legal pages a public site needs (disclaimer, privacy policy and terms).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binteejaz/travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/binteejaz/travel/issues"
+  },
+  "homepage": "https://github.com/binteejaz/travel#readme",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
