@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edinburgh Guide — Elsewhere Travel Guide</title>
-    <meta name="description" content="Explore Edinburgh slowly: the city, the best places to visit, its libraries and where to eat.">
+    <meta name="description"
+        content="Explore Edinburgh slowly: the city, the best places to visit, its libraries and where to eat.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,7 +25,7 @@
             <div class="nav-links">
                 <a href="index.html">Home</a>
 
-                <div class="nav-dropdown">
+                <div class="nav-links" id="nav-links">
                     <button class="nav-dropdown-toggle" type="button" aria-expanded="false"
                         aria-controls="destinations-menu">
                         Destinations
@@ -42,8 +43,8 @@
                 <a href="philosophy.html">Our philosophy</a>
                 <a href="journal.html">Journal</a>
             </div>
-
-            <button class="menu-btn" aria-label="Open menu">☰</button>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-links">☰</button>
         </nav>
     </header>
 
@@ -126,8 +127,8 @@
 
                 <a class="card" href="edinburgh-food.html">
                     <!-- Replace with your own food photo -->
-                    <img src="images/mxwegele-man-5524488_1920.jpg"
-                        alt="A table set for a meal in Edinburgh" loading="lazy">
+                    <img src="images/mxwegele-man-5524488_1920.jpg" alt="A table set for a meal in Edinburgh"
+                        loading="lazy">
                     <span class="tag">Food</span>
 
                     <div class="card-content">
@@ -156,7 +157,7 @@
                 </a>
             </div>
 
-             <div class="footer-column">
+            <div class="footer-column">
                 <h3>Explore</h3>
                 <a href="edinburgh-guide.html">City and Destination Guide</a>
                 <a href="libraries-journal.html">Culture and Libraries</a>

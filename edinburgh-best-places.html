@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="journal-cards.css">
-     <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <div class="nav-links" style="color: black;">
                 <a href="index.html">Home</a>
 
-                <div class="nav-dropdown">
+                <div class="nav-links" id="nav-links">
                     <button class="nav-dropdown-toggle" type="button" aria-expanded="false"
                         aria-controls="destinations-menu">
                         Destinations
@@ -43,8 +43,8 @@
                 <a href="philosophy.html">Our philosophy</a>
                 <a href="journal.html">Journal</a>
             </div>
-
-            <button class="menu-btn" aria-label="Open menu">☰</button>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-links">☰</button>
         </nav>
     </header>
 
@@ -385,7 +385,7 @@
                 </a>
             </div>
 
-           <div class="footer-column">
+            <div class="footer-column">
                 <h3>Explore</h3>
                 <a href="edinburgh-guide.html">City and Destination Guide</a>
                 <a href="libraries-journal.html">Culture and Libraries</a>

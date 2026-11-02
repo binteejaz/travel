@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="journal-cards.css">
-     <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png">
 
 </head>
 
@@ -21,7 +21,7 @@
         <nav class="container">
             <a href="index.html" class="logo">else<span>where</span></a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
 
                 <div class="nav-dropdown">
@@ -44,8 +44,8 @@
 
             </div>
 
-
-            <button class="menu-btn" aria-label="Open menu">☰</button>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-links">☰</button>
         </nav>
     </header>
 
