@@ -106,9 +106,15 @@ nav {
 .hero-image {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=85")
+  background: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=70")
     center/cover;
   transform: scale(1.05);
+}
+
+@media (min-width: 901px) {
+  .hero-image {
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=75");
+  }
 }
 
 .hero::after {
