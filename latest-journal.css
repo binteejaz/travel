@@ -1,0 +1,82 @@
+/* Latest journal section (home page) */
+
+.latest-journal {
+  border-top: 1px solid var(--line);
+}
+
+.latest-all {
+  color: #4c633f;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.latest-all:hover {
+  color: var(--forest);
+}
+
+/* 4 columns on desktop, 2 on tablet, 1 on phone, no media query needed */
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.latest-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+}
+
+.latest-card > a {
+  display: block;
+  height: 100%;
+}
+
+.latest-thumb {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.latest-body {
+  padding: 22px;
+}
+
+.latest-cat {
+  margin: 0 0 8px;
+  color: #4c633f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.latest-card h3 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.latest-card p {
+  margin: 0 0 18px;
+  color: #596456;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.latest-more {
+  color: var(--forest);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.latest-card:hover h3 {
+  color: #4c633f;
+}
+
+.latest-card a:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: -2px;
+}
