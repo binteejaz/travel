@@ -28,22 +28,23 @@
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="journal-cards.css">
+    <link rel="stylesheet" href="latest-journal.css"
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
     <style>
-  .hero {
-    height: auto !important;
-    min-height: 100svh !important;
-    overflow: hidden !important;
-  }
+        .hero {
+            height: auto !important;
+            min-height: 100svh !important;
+            overflow: hidden !important;
+        }
 
-  .hero h1 {
-    font-size: clamp(2.25rem, 1rem + 5vw, 4.5rem) !important;
-    line-height: 1.1 !important;
-    letter-spacing: -0.02em !important;
-    margin: 20px 0 24px !important;
-  }
-</style>
+        .hero h1 {
+            font-size: clamp(2.25rem, 1rem + 5vw, 4.5rem) !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.02em !important;
+            margin: 20px 0 24px !important;
+        }
+    </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBDWFEK6T3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -206,6 +207,78 @@
                 </a>
             </div>
         </section>
+        <section class="section container latest-journal" id="latest-journal">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">From the journal</div>
+                    <h2>Latest<br><em>stories.</em></h2>
+                </div>
+                <a class="latest-all" href="journal.html">View all articles →</a>
+            </div>
+
+            <div class="latest-grid">
+                <article class="latest-card">
+                    <a href="edinburgh-food.html">
+                        <div class="latest-thumb">
+                            <img src="images-optimized/mxwegele-man-5524488.webp" alt="A table set for a meal in Edinburgh"
+                                width="800" height="600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="latest-body">
+                            <div class="eyebrow">Food</div>
+                            <h3>Eating Slowly in Edinburgh</h3>
+                            <p>The dishes worth trying, the markets worth a Saturday morning, and the waterfront worth a
+                                long lunch.</p>
+                            <span class="latest-more">Read article →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="latest-card">
+                    <a href="edinburgh-best-places.html">
+                        <div class="latest-thumb">
+                            <img src="images-optimized/cameron-gibson-TmDEY0DtQd0-unsplash.webp" alt="Edinburgh Castle above the city"
+                                width="800" height="600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="latest-body">
+                            <div class="eyebrow">Places</div>
+                            <h3>Best Places in Edinburgh</h3>
+                            <p>Where to go first, what is worth your time, and how to pace your days.</p>
+                            <span class="latest-more">Read article →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="latest-card">
+                    <a href="libraries-journal.html">
+                        <div class="latest-thumb">
+                            <img src="images-optimized/tama66-room-4779953.webp" alt="A grand library interior in Edinburgh"
+                                width="800" height="600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="latest-body">
+                            <div class="eyebrow">Culture</div>
+                            <h3>Culture and Libraries</h3>
+                            <p>Quiet rooms, old shelves, and the stories inside them.</p>
+                            <span class="latest-more">Read article →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="latest-card">
+                    <a href="edinburgh-journal.html">
+                        <div class="latest-thumb">
+                            <img src="images-optimized/roses_street-monument-6657182.webp" alt="The Edinburgh skyline" width="800"
+                                height="600" loading="lazy" decoding="async">
+                        </div>
+                        <div class="latest-body">
+                            <div class="eyebrow">Journal</div>
+                            <h3>The Edinburgh Journal</h3>
+                            <p>Notes, photographs, and ideas for your next great escape.</p>
+                            <span class="latest-more">Read article →</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
         <section class="section container story" id="story">
             <div class="story-image">
                 <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80"
@@ -218,7 +291,9 @@
 
                 <p>
                     We believe the best trips are not measured in destinations visited,
-                    but in moments remembered. DoTravelling is a collection of thoughtful travel guides for curious travelers who prefer meaningful experiences, cultural discoveries, and exploring destinations at a slower pace.
+                    but in moments remembered. DoTravelling is a collection of thoughtful travel guides for curious
+                    travelers who prefer meaningful experiences, cultural discoveries, and exploring destinations at a
+                    slower pace.
                 </p>
 
                 <a href="#journal" class="button">Read our journal →</a>
