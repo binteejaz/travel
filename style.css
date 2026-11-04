@@ -1452,3 +1452,23 @@ footer {
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
+
+/* Short laptops, for example 1366 x 650 */
+@media (min-width: 751px) and (max-height: 700px) {
+  .hero {
+    padding: 110px 0 48px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 9vh, 3.75rem); /* about 58px at 650px tall */
+    margin: 14px 0 16px;
+  }
+
+  .hero p {
+    line-height: 1.6;
+  }
+
+  .hero .button {
+    margin-top: 8px;
+  }
+}
