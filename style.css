@@ -173,7 +173,6 @@ nav {
 
 h1 {
  max-width: 820px;
-  font-size: clamp(40px, 6vw, 76px);
   letter-spacing: -2px;
   line-height: 1.02;
 }
@@ -1426,7 +1425,6 @@ footer {
 /* Hero heading and text */
 .hero h1 {
   max-width: 820px;
-  font-size: clamp(40px, 6vw, 76px);
   letter-spacing: -2px;
   line-height: 1.02;
 }
@@ -1436,7 +1434,7 @@ footer {
 }
 
 /* Light-green text is unreadable on cream sections */
-.section .eyebrow,
-.section h2 em {
+section .eyebrow,
+section h2 em {
   color: #4c633f;
 }
