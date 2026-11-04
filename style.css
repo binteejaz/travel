@@ -174,9 +174,8 @@ nav {
 h1 {
   max-width: 800px;
   margin: 25px 0;
-  font-size: 1.5rem;
-  line-height: 0.95;
-  letter-spacing: -5px;
+  font-size: clamp(48px, 7vw, 92px);
+  letter-spacing: -3px;
 }
 
 h1 em,
