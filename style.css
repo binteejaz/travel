@@ -1421,16 +1421,6 @@ footer {
   }
 }
 
-/* Hero heading and text */
-.hero h1 {
-  max-width: 820px;
-  margin: 20px 0 24px;
-  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  text-wrap: balance;
-}
-
 .hero p {
   max-width: 480px;
 }
@@ -1439,4 +1429,26 @@ footer {
 .section .eyebrow,
 .section h2 em {
   color: #4c633f;
+}
+
+/* HERO FIX: keep this at the very end of the file */
+.hero {
+  height: auto;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 100px;
+}
+
+.hero .hero-content {
+  padding-top: 0;
+}
+
+.hero h1 {
+  max-width: 820px;
+  margin: 20px 0 24px;
+  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
