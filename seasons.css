@@ -13,7 +13,7 @@
 /* 4 columns on desktop, 2 on tablet, 1 on phone, no media query needed */
 .season-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 22px;
 }
 
