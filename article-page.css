@@ -1,0 +1,27 @@
+/* Journal article pages: header sits on a cream background, not a dark hero.
+   Add class="article-page" to <body> and link this file after style.css. */
+
+.article-page header {
+  color: var(--forest);
+  border-bottom: 1px solid var(--line);
+}
+
+.article-page .logo span {
+  color: #4c633f;
+}
+
+/* Pale green is unreadable on cream */
+.article-page .eyebrow {
+  color: #4c633f;
+}
+
+.article-page .menu-btn {
+  color: var(--forest);
+}
+
+/* On phones the open menu has a dark background, so its text must be light */
+@media (max-width: 750px) {
+  .article-page .nav-links {
+    color: #fff;
+  }
+}
