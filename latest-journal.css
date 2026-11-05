@@ -80,3 +80,11 @@
   outline: 2px solid var(--forest);
   outline-offset: -2px;
 }
+
+.latest-journal .eyebrow {
+  color: #4c633f;
+}
+
+.latest-body .eyebrow {
+  margin-bottom: 8px;
+}
