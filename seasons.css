@@ -1,4 +1,4 @@
-/* Seasonal travel section (home page) */
+/* Seasonal travel section (home page): four photo cards */
 
 .seasons {
   border-top: 1px solid var(--line);
@@ -13,58 +13,92 @@
 /* 4 columns on desktop, 2 on tablet, 1 on phone, no media query needed */
 .season-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
 }
 
 .season-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 26px 24px 24px;
-  border: 1px solid var(--line);
-  border-top: 4px solid var(--season, var(--forest));
-  border-radius: 8px;
-  background: #fffdf8;
+  justify-content: flex-end;
+  min-height: 400px;
+  padding: 24px;
+  overflow: hidden;
+  border-radius: 6px;
+  color: #fff;
+  isolation: isolate;
+  /* Shows if a photo is missing, so the card never looks broken */
+  background: var(--season-base, var(--forest));
 }
 
-.season-spring { --season: #7a9a5b; }
-.season-summer { --season: #c49a3a; }
-.season-autumn { --season: #a8552e; }
-.season-winter { --season: #4f6d86; }
+.season-spring { --season-base: #2f4a2a; --season: #c5dfa8; }
+.season-summer { --season-base: #6b5517; --season: #f0d58a; }
+.season-autumn { --season-base: #5a2e18; --season: #f0b08a; }
+.season-winter { --season-base: #243a4d; --season: #b9d3e8; }
+
+.season-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Dark gradient so the text stays readable on any photo */
+.season-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, #092319f2 0%, #092319cc 45%, #09231933 75%, transparent 100%);
+}
+
+.season-card:hover img {
+  transform: scale(1.05);
+}
 
 .season-months {
-  color: #5f685e;
+  color: var(--season);
   font-size: 12px;
   font-weight: 700;
 }
 
 .season-card h3 {
-  margin: 8px 0 12px;
-  font-size: 32px;
-  line-height: 1.1;
+  margin: 8px 0 10px;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1.05;
 }
 
 .season-card p {
-  margin: 0 0 20px;
-  color: #596456;
+  margin: 0 0 18px;
+  color: #e6eee3;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .season-more {
-  margin-top: auto;
-  color: var(--forest);
+  padding-top: 14px;
+  border-top: 1px solid #ffffff55;
+  color: #fff;
   font-size: 12px;
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.season-card:hover h3 {
-  color: #4c633f;
 }
 
 .season-card:focus-visible {
   outline: 2px solid var(--forest);
   outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .season-card img {
+    transition: none;
+  }
+
+  .season-card:hover img {
+    transform: none;
+  }
 }
